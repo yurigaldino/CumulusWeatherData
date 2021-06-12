@@ -12,4 +12,4 @@ Mentoria:
 
 <i><a href="http://www.lamce.coppe.ufrj.br/" target="_blank">Laboratory for Computational Methods in Engineering (LAMCE/COPPE/UFRJ)</a></i>
 
-<p align="center"><img src="https://media0.giphy.com/media/QRhtqYeEywJI4/giphy.gif?cid=790b7611c4f5f2768c9a9019ef452d0d5f8ba6f79d81858c&rid=giphy.gif&ct=g" alt="this slowpoke moves" width="250" border-radius="50%"/></p>
+<p align="center"><img src="https://media0.giphy.com/media/QRhtqYeEywJI4/giphy.gif?cid=790b7611c4f5f2768c9a9019ef452d0d5f8ba6f79d81858c&rid=giphy.gif&ct=g" alt="this slowpoke moves" width="250" border-radius="50px"/></p>
