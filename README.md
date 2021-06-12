@@ -11,3 +11,4 @@ Mentoria:
 > Fábio Hochleitner
 
 
+<p><g-emoji class="g-emoji" alias="briefcase" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bc.png">💼</g-emoji> I’m currently working at <a href="https://www.bureauworks.com/" rel="nofollow">Bureau Works</a> and <a href="http://www.lamce.coppe.ufrj.br/" rel="nofollow">Laboratory for Computational Methods in Engineering (LAMCE/COPPE/UFRJ)</a></p>
