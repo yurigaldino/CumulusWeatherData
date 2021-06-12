@@ -1,4 +1,4 @@
-# CumulusWeatherData
+# CumulusWeatherData ☀️
 Projeto com RaspberryPi, coleta de dados meteorológicos em situ ma Baía de Guanabara - RJ.
 
 ## Descrição
