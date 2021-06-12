@@ -1,1 +1,2 @@
-{"temp":"0.0","hum":"0","dew":"0.0","wspeed":"0.0","wdir":"-","wgust":"0.0","recentwindchill":"","heatindex":"0.0","THWindex":"0.0","press":"1020.6","rfall":"618.6","rrate":"0.0","heatdegdays":"0.0","cooldegdays":"0.0","intemp":"28.9","inhum":"56","WindSampleCount":"252","forecast":"Fine weather"}
+[date, time, temp, hum, dew, wspeed, wdir, wgust, recentwindchill, heatindex, thwindex, press, rfall, rrate, heatdegdays, cooldegdays, intemp, inhum, WindSampleCount, forecast, battery]
+
