@@ -8,6 +8,6 @@ Autores:
 > Yuri Galdino e Rodrigo Lucas
 
 Mentoria:
-> <a href="https://www.linkedin.com/in/fabioh/" rel="nofollow" target="_blank">Fábio Hochleitner</a>
+> <a href="https://www.linkedin.com/in/fabioh/" target="_blank">Fábio Hochleitner</a>
 
-<i><a href="http://www.lamce.coppe.ufrj.br/" rel="nofollow" target="_blank">Laboratory for Computational Methods in Engineering (LAMCE/COPPE/UFRJ)</a></i>
+<i><a href="http://www.lamce.coppe.ufrj.br/" target="_blank">Laboratory for Computational Methods in Engineering (LAMCE/COPPE/UFRJ)</a></i>
