@@ -90,7 +90,7 @@ const getAsyncData = async () => {
     let battery= fullobj.battery;
 
     //Object with just data
-    let formatted_obj = [date, time, temp, hum, dew, wspeed, wdir, wgust, recentwindchill, heatindex, thwindex, press, rfall, rrate, heatdegdays, cooldegdays, intemp, inhum, WindSampleCount, forecast, battery];
+    let formatted_obj = [date, time, temp, hum, dew, wspeed, wdir, wgust, recentwindchill, heatindex, thwindex, press, rfall, rrate, heatdegdays, cooldegdays, intemp, inhum, WindSampleCount, battery];
 
     //fs.writeFile(filename, "some data", { flag: "wx" }, function(err)
 
