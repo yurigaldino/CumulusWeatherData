@@ -1,2 +1,0 @@
-[date, time, temp, hum, dew, wspeed, wdir, wgust, recentwindchill, heatindex, thwindex, press, rfall, rrate, heatdegdays, cooldegdays, intemp, inhum, WindSampleCount, battery]
-.
