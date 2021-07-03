@@ -1,0 +1,61 @@
+<weatherdata>
+    <apiChanges></apiChanges>
+    <location>
+        <name>London</name>
+        <type>Capital</type>
+        <country>United Kingdom</country>
+        <timezone id="Europe/London" utcoffsetMinutes="60"/>
+        <location altitude="25" latitude="51.50853" longitude="-0.12574" geobase="geonames" geobaseid="2643743"/>
+    </location>
+    <credit>
+        <link text="Weather forecast from Yr, delivered by the Norwegian Meteorological Institute and the NRK" url="http://www.yr.no/place/United_Kingdom/England/London/"/>
+    </credit>
+    <links>
+        <link id="xmlSource" url="http://www.yr.no/place/United_Kingdom/England/London/forecast.xml"/>
+        <link id="xmlSourceHourByHour" url="http://www.yr.no/place/United_Kingdom/England/London/forecast_hour_by_hour.xml"/>
+    </links>
+    <meta>
+        <lastupdate>2021-07-03T09:11:00</lastupdate>
+        <nextupdate>2021-07-03T15:11:00</nextupdate>
+    </meta>
+    <sun rise="2021-07-03T04:49:11" set="2021-07-03T21:19:47"/>
+    <forecast>
+        <tabular>
+            <time from="2021-07-03T13:00:00" to="2021-07-03T14:00:00">
+                <!--
+                Valid from 2021-07-03T13:00:00 to 2021-07-03T14:00:00 
+                -->
+                <symbol number="3" numberEx="3" name="Partly cloudy" var="03d"/>
+                <precipitation value="0"/>
+                <!-- Valid at 2021-07-03T13:00:00 -->
+                <windDirection deg="212.3" code="SSW" name="South-southwest"/>
+                <windSpeed mps="5.5" name="Moderate breeze"/>
+                <temperature unit="celsius" value="21"/>
+                <pressure unit="hPa" value="1011.5"/>
+            </time>
+            <time from="2021-07-03T14:00:00" to="2021-07-03T15:00:00">
+                <!--
+                Valid from 2021-07-03T14:00:00 to 2021-07-03T15:00:00 
+                -->
+                <symbol number="3" numberEx="3" name="Partly cloudy" var="03d"/>
+                <precipitation value="0"/>
+                <!-- Valid at 2021-07-03T14:00:00 -->
+                <windDirection deg="204.0" code="SSW" name="South-southwest"/>
+                <windSpeed mps="5.9" name="Moderate breeze"/>
+                <temperature unit="celsius" value="21"/>
+                <pressure unit="hPa" value="1011.2"/>
+            </time>
+        </tabular>
+    </forecast>
+
+
+    <weatherstation stno="0" sttype="" name="" distance="0" lat="0" lon="0" source="">
+        <!--
+        Observasjoner er ikke lengre tilgjengelig i dette datasettet. Observations are no longer availble in this dataset
+        -->
+        <symbol number="0" name="" time="2019-11-14T00:00:00Z"/>
+        <temperature unit="" value="0" time="2019-11-14T00:00:00Z"/>
+        <windDirection deg="0" code="" name="" time="2019-11-14T00:00:00Z"/>
+        <windSpeed mps="0" name="" time="2019-11-14T00:00:00Z"/>
+    </weatherstation>
+</weatherdata>
