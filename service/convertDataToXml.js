@@ -1,14 +1,14 @@
 const fs = require('fs');
 var parser = require('xml2json');
  
-function setData(data) {
+function setData(weather_data) {
 //Read data from txt
     fs.readFile("../default_format.xml", 'utf8', function (err,data) {
         var json = JSON.parse(parser.toJson(data, {reversible: true}));
         var timeseries = json["weatherdata"]["forecast"]["tabular"]["time"];
         for (var i = 0; i < timeseries.length; i++) {
-            var time= timeseries[i];
-            time.temperature.value = i;
+            var time = timeseries[i];
+            time.temperature.value = weather_data[i];
         }
         
         var stringified = JSON.stringify(json);
@@ -38,5 +38,5 @@ function getData(){
     }
     return internal_temperature
 }
-getData();
-console.log(getData());
+int_temp = getData();
+setData(int_temp);
