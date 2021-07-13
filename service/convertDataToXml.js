@@ -1,6 +1,6 @@
 const fs = require('fs');
 var parser = require('xml2json');
- 
+const formatXml = require("xml-formatter") 
 function setData(weather_data) {
 //Read data from txt
     fs.readFile("../default_format.xml", 'utf8', function (err,data) {
@@ -13,7 +13,7 @@ function setData(weather_data) {
         
         var stringified = JSON.stringify(json);
         var xml = parser.toXml(stringified);
-        fs.writeFile('test.xml', xml, function(err, data) {
+        fs.writeFile('test.xml',formatXml(xml,{collapseContent: true}) , function(err, data) {
             if (err) {
             console.log(err);
             }
