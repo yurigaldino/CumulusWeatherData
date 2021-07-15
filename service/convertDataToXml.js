@@ -14,8 +14,10 @@ function setData(weather_data) {
         }
         var locationName = json["weatherdata"]["location"]["name"];
         var locationCountry = json["weatherdata"]["location"]["country"];
+        // needs a refactor in how we put the credits
         locationName.$t = credits[0];
         locationCountry.$t = credits[1];
+        
         var stringified = JSON.stringify(json);
         var xml = parser.toXml(stringified);
         fs.writeFile('data.xml',formatXml(xml,{collapseContent: true}) , function(err, data) {
@@ -32,7 +34,7 @@ function setData(weather_data) {
         }
     });
 }
-
+// needs a refactor in how we return and update the data needed 
 function getData(){ 
     var array = fs.readFileSync('./data.txt').toString().split("\n");
     let internal_temperature =[]
@@ -46,6 +48,7 @@ function getData(){
     weather_data = [internal_temperature, pressure]
     return weather_data
 }
+// needs a refactor in how we put the credits
 function updateCredits(){
    let name = "Rio De Janeiro"
    let country = "Brazil"
