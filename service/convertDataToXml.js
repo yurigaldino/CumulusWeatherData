@@ -3,6 +3,7 @@ var parser = require('xml2json');
 const formatXml = require("xml-formatter") 
 function setData(weather_data) {
 //Read data from txt
+    credits = updateCredits();
     fs.readFile("../default_format.xml", 'utf8', function (err,data) {
         var json = JSON.parse(parser.toJson(data, {reversible: true}));
         var timeseries = json["weatherdata"]["forecast"]["tabular"]["time"];
@@ -11,10 +12,13 @@ function setData(weather_data) {
             time.temperature.value  =   weather_data[0][i];
             time.pressure.value     =   weather_data[1][i];
         }
-        
+        var locationName = json["weatherdata"]["location"]["name"];
+        var locationCountry = json["weatherdata"]["location"]["country"];
+        locationName.$t = credits[0];
+        locationCountry.$t = credits[1];
         var stringified = JSON.stringify(json);
         var xml = parser.toXml(stringified);
-        fs.writeFile('test.xml',formatXml(xml,{collapseContent: true}) , function(err, data) {
+        fs.writeFile('data.xml',formatXml(xml,{collapseContent: true}) , function(err, data) {
             if (err) {
             console.log(err);
             }
@@ -41,6 +45,12 @@ function getData(){
     }
     weather_data = [internal_temperature, pressure]
     return weather_data
+}
+function updateCredits(){
+   let name = "Rio De Janeiro"
+   let country = "Brazil"
+   return [name,country]
+
 }
 data = getData();
 setData(data);
