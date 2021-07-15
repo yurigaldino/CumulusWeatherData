@@ -8,7 +8,8 @@ function setData(weather_data) {
         var timeseries = json["weatherdata"]["forecast"]["tabular"]["time"];
         for (var i = 0; i < timeseries.length; i++) {
             var time = timeseries[i];
-            time.temperature.value = weather_data[i];
+            time.temperature.value  =   weather_data[0][i];
+            time.pressure.value     =   weather_data[1][i];
         }
         
         var stringified = JSON.stringify(json);
@@ -38,7 +39,8 @@ function getData(){
         internal_temperature.push(array_2[16]);
         pressure.push(array_2[11]);
     }
-    return internal_temperature
+    weather_data = [internal_temperature, pressure]
+    return weather_data
 }
-int_temp = getData();
-setData(int_temp);
+data = getData();
+setData(data);
