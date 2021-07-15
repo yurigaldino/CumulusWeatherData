@@ -31,10 +31,12 @@ function setData(weather_data) {
 function getData(){ 
     var array = fs.readFileSync('./data.txt').toString().split("\n");
     let internal_temperature =[]
+    let pressure =[]
     //get data of the last 48 data from internal temperature
-    for (let i = array.length - 48; i <array.length - 1; i++) {
+    for (let i = array.length - 49; i <array.length - 1; i++) {
         array_2 = JSON.parse(array[i]);
         internal_temperature.push(array_2[16]);
+        pressure.push(array_2[11]);
     }
     return internal_temperature
 }
