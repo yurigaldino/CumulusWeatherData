@@ -308,7 +308,7 @@ Meteogram.prototype.getChartOptions = function () {
         
 
         series: [{
-            name: 'Temperature',
+            name: 'Internal Temperature',
             data: this.temperatures,
             type: 'spline',
             marker: {
