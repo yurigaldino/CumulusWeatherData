@@ -377,7 +377,7 @@ Meteogram.prototype.getChartOptions = function () {
                 valueSuffix: ' mm'
             }
         }, {
-            name: 'Air pressure',
+            name: 'Pressure',
             color: Highcharts.getOptions().colors[2],
             data: this.pressures,
             marker: {
@@ -569,7 +569,7 @@ function getXML(url, cb, cbErr) {
 }
 
 url = location.hash.substr(1);
-getXML('/service/test.xml' ,
+getXML('/service/data.xml' ,
 xml => {
     window.meteogram = new Meteogram(xml, 'container');
 },
