@@ -308,7 +308,7 @@ Meteogram.prototype.getChartOptions = function () {
         
 
         series: [{
-            name: 'Temperature',
+            name: 'Internal Temperature',
             data: this.temperatures,
             type: 'spline',
             marker: {
@@ -377,7 +377,7 @@ Meteogram.prototype.getChartOptions = function () {
                 valueSuffix: ' mm'
             }
         }, {
-            name: 'Air pressure',
+            name: 'Pressure',
             color: Highcharts.getOptions().colors[2],
             data: this.pressures,
             marker: {
@@ -548,7 +548,7 @@ if (!location.hash) {
     //place = 'United_States/California/San_Francisco';
     //place = 'United_States/Minnesota/Minneapolis';
 
-    location.hash = 'https://www.yr.no/place/' + place + '/forecast_hour_by_hour.xml';
+    //location.hash = 'https://www.yr.no/place/' + place + '/forecast_hour_by_hour.xml';
 }
 
 // Then get the XML file through Highcharts' CORS proxy. Our proxy is limited to
@@ -569,9 +569,7 @@ function getXML(url, cb, cbErr) {
 }
 
 url = location.hash.substr(1);
-getXML(url === 'https://www.yr.no/place/United_Kingdom/England/London/forecast_hour_by_hour.xml' ?
-    'https://demo-live-data.highcharts.com/weather-forecast.xml' :
-    'https://cors-anywhere.herokuapp.com/' + url,
+getXML('/service/data.xml' ,
 xml => {
     window.meteogram = new Meteogram(xml, 'container');
 },
